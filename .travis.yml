@@ -10,6 +10,8 @@ script:
 - cmake .
 - cmake --build .
 - cmake --build . --target package
+- mkdir out
+- mkdir doc
 - doxygen Doxyfile
 deploy:
   - provider: script
